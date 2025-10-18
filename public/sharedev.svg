@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <g clip-path="url(#clip0_10_10)">
+    <!-- The main symbol group -->
+    <g>
+      <!-- Shield background, representing safety and trust -->
+      <path d="M50 7.5C77.5 16.25 91.25 32.5 91.25 51.25C91.25 67.5 76.25 81.25 50 92.5C23.75 81.25 8.75 67.5 8.75 51.25C8.75 32.5 22.5 16.25 50 7.5Z" fill="#0A84FF" fill-opacity="0.1"/>
+      
+      <!-- Green arrow, representing eco-friendly sharing -->
+      <path d="M68.9141 21.3633C62.7227 16.6406 52.8867 15.625 50 15.625C35.8398 15.625 24.0352 26.1094 22.1836 40.0195L31.3984 40.0195C33.0156 31.5781 40.6719 25 50 25C51.6484 25 56.4062 25.3203 60.7188 28.5312L54.6055 35.8086H77.9258V12.5L68.9141 21.3633Z" fill="#30D158"/>
+      
+      <!-- Blue arrow, representing technology and circulation -->
+      <path d="M31.0859 78.6367C37.2773 83.3594 47.1133 84.375 50 84.375C64.1602 84.375 75.9648 73.8906 77.8164 59.9805H68.6016C66.9844 68.4219 59.3281 75 50 75C48.3516 75 43.5938 74.6797 39.2812 71.4688L45.3945 64.1914H22.0742V87.5L31.0859 78.6367Z" fill="#0A84FF"/>
+      
+      <!-- Central EV plug icon -->
+      <g fill="#1C1C1E">
+        <path d="M57.5 37.5V32.5H61.25V37.5H57.5Z"/>
+        <path d="M38.75 37.5V32.5H42.5V37.5H38.75Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 67.5V40H62.5V67.5H37.5ZM53.75 47.5L48.75 55H52.5L46.25 63.75L48.125 56.25H43.75L50 47.5H53.75Z" />
+      </g>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_10_10">
+      <rect width="100" height="100" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
