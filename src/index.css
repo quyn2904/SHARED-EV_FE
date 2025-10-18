@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+:root {
+  --primary: 0, 122, 255;
+  --accent: 52, 199, 89;
+  --danger: 255, 59, 48;
+  --button: 0, 122, 255;
+  --button-text: 255, 255, 255;
+}
+
+.light {
+  --background-primary: 255, 255, 255;
+  --background-secondary: 242, 242, 247;
+  --text-primary: 28, 28, 30;
+  --text-secondary: 110, 110, 115;
+  --border: 198, 198, 200;
+
+  --button-hover: 0, 105, 217;
+  --button-active: 0, 86, 179;
+  --button-disabled-bg: 229, 229, 234;
+  --button-disabled-text: 142, 142, 147;
+
+  background: rgba(var(--background-primary), 1);
+  color: rgba(var(--text-primary), 1);
+}
+
+.dark {
+  --background-primary: 28, 28, 30;
+  --background-secondary: 44, 44, 46;
+  --text-primary: 255, 255, 255;
+  --text-secondary: 142, 142, 147;
+  --border: 72, 72, 74;
+
+  --button-hover: 50, 145, 255;
+  --button-active: 80, 165, 255;
+  --button-disabled-bg: 44, 44, 46;
+  --button-disabled-text: 99, 99, 102;
+
+  background: rgba(var(--background-primary), 1);
+  color: rgba(var(--text-primary), 1);
+}
