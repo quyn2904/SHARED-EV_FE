@@ -1,21 +1,24 @@
 import React from "react";
 import AppRouter from "@/router";
 import { AuthProvider } from "@/contexts/AuthContext/AuthContext";
-import { ThemeProvider } from "./contexts/ThemeContext/ThemeContext";
 import useThemeContext from "./contexts/ThemeContext/useThemeContext";
 
 function App() {
   const { theme } = useThemeContext();
 
   React.useEffect(() => {
-    document.body.classList.add(theme);
+    if (theme === "dark") {
+      document.body.classList.remove("light");
+      document.body.classList.add(theme);
+    } else {
+      document.body.classList.remove("dark");
+      document.body.classList.add(theme);
+    }
   }, [theme]);
 
   return (
     <AuthProvider>
-      <ThemeProvider>
-        <AppRouter />
-      </ThemeProvider>
+      <AppRouter />
     </AuthProvider>
   );
 }

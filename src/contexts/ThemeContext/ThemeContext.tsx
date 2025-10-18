@@ -2,7 +2,8 @@ import React from "react";
 
 interface ThemeContextType {
   theme: "dark" | "light";
-  setTheme: React.Dispatch<React.SetStateAction<"light" | "dark">>;
+  // setTheme: React.Dispatch<React.SetStateAction<"light" | "dark">>;
+  toggleTheme: () => void;
 }
 
 const initialThemeContext: ThemeContextType = {
@@ -11,7 +12,8 @@ const initialThemeContext: ThemeContextType = {
     : window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light",
-  setTheme: () => null,
+  // setTheme: () => null,
+  toggleTheme: () => null,
 };
 
 const ThemeContext = React.createContext<ThemeContextType>(initialThemeContext);
@@ -21,11 +23,15 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     initialThemeContext.theme
   );
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <ThemeContext.Provider
       value={{
         theme,
-        setTheme,
+        toggleTheme,
       }}
     >
       {children}
