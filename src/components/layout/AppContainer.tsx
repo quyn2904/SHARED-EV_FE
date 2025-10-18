@@ -1,11 +1,10 @@
 import AppNavBar from "../AppNavBar/AppNavBar";
 
-const AppContainer = ({ children }: { children: React.ReactNode }) => {
+const AppContainer = () => {
   return (
-    <>
+    <div className="">
       <AppNavBar />
-      <>{children}</>
-    </>
+    </div>
   );
 };
 
