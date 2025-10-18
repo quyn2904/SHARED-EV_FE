@@ -1,6 +1,6 @@
 const Logo = {
   url: "https://shared-ev.quyenpq.work",
-  src: "public/sharedev.svg",
+  src: "sharedev.svg",
   alt: "logo",
   title: "Shared EV",
 };
