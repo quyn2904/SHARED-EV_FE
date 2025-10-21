@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import { HomePage, AuthPage } from "@/pages";
+import { HomePage, AuthPage, NotFoundPage } from "@/pages";
 import ProtectedRoutes from "./ProtectedRoutes";
 
 const AppRouter = () => {
@@ -11,6 +11,7 @@ const AppRouter = () => {
         <Route element={<ProtectedRoutes />}>
           <Route path="/" element={<HomePage />} />
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
