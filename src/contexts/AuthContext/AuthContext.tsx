@@ -1,12 +1,12 @@
-import React, { createContext } from "react";
+import React from "react";
 
-interface AuthContextType {
+type AuthContextType = {
   isAuthenticated: boolean;
   setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
   profile: null;
   setProfile: React.Dispatch<React.SetStateAction<null>>;
   reset: () => void;
-}
+};
 
 const initialAuthContext: AuthContextType = {
   isAuthenticated: false,
@@ -16,7 +16,7 @@ const initialAuthContext: AuthContextType = {
   reset: () => null,
 };
 
-const AuthContext = createContext<AuthContextType>(initialAuthContext);
+const AuthContext = React.createContext<AuthContextType>(initialAuthContext);
 
 const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = React.useState<boolean>(
